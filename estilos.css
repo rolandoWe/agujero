@@ -1,0 +1,85 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    width:100%;
+    max-width: 1200px;
+    margin: auto;
+    height: 100vh;
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/* .primaria{
+    border:solid red 1px
+} */
+.caja{
+    width:400px;
+    height:400px;
+    /* border: solid black 1px; */
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.onda,
+.onda2,
+.onda3,
+.onda4,
+.onda5,
+.onda6,
+.onda7,
+.onda8,
+.onda9,
+.onda10{
+    position: absolute;
+    width:150%;
+    height: 150%;
+    border: solid rgb(34, 255, 0) 1px;
+    border-radius: 50%;
+    /* animation: animar linear infinite 5s; */
+    /* animation-delay: 1s; */
+}
+.addAnim{animation: animar linear infinite 2s;}
+.onda{animation-delay: 1s;}
+.onda2{animation-delay: 1.3s;}
+.onda3{animation-delay: 1.5s;}
+.onda4{animation-delay: 1.7s;}
+.onda5{animation-delay: 1.9s;}
+.onda6{animation-delay: 2.1s;}
+.onda7{animation-delay: 2.3s;}
+.onda8{animation-delay: 2.5s;}
+.onda9{animation-delay: 2.7s;}
+.onda10{animation-delay: 2.9s;}
+@keyframes animar{
+    0%{width:150%;height:150%}
+    100%{width:0%;height:0%}
+}
+.boton{
+    width:100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.animar{
+    position: relative;
+    padding: 5px 10px;
+    background-color: greenyellow;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .5s;
+}
+@media (max-width:576px){
+    .caja{
+        width:270px;
+        height:270px;
+    }
+}
